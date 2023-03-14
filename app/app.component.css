@@ -1,0 +1,8 @@
+p {
+  font-family: Lato;
+}
+
+.dropzone {
+  padding: 50px;
+  box-sizing: border-box;
+}

@@ -1,0 +1,19 @@
+<p>Start editing to see some magic happen :)</p>
+<ul class="">
+  <li *ngFor="let item of photos">
+    <img [src]="item.download_url" height="130" (dragover)="onDrag($event,item)" width="130" />
+  </li>
+</ul>
+<div class="dropzone" fileDragDrop (filesChangeEmiter)="onDropChange($event)">
+  <img [src]="url" height="200" /> <br />
+  <input type="file" (change)="onSelectFile($event)" />
+</div>
+<br />
+<br />
+<br />
+<br />
+<hr />
+<br />
+<br />
+<!-- <h2>Canvas component</h2>
+<app-canvas></app-canvas> -->
